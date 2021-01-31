@@ -19,7 +19,7 @@ const Breakout = ({title, width, height, background}) => {
             },
             backgroundColor: background,
             parent: 'phaser-parent',
-            scene: GameScene,
+            scene: [GameScene],
         }));
         setPhaser(_phaser);
     }, [ title, width, height, background])
